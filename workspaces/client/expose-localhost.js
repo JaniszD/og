@@ -10,6 +10,7 @@ ngrok.connect({
     authtoken: process.env.NGROK_AUTHTOKEN,
     domain: process.env.NGROK_DOMAIN
 })
+
 .then(listener => console.info(`Exposed to ${listener.url()}`));
 
 process.stdin.resume();
